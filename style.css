@@ -15,9 +15,3 @@ body::before {
         width: 50%;
     }
 }
-
-#services p {
-    font-size: .9rem;
-    font-weight: 400;
-    text-transform: capitalize;
-}
