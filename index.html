@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
     <!-- navbar start-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-        <div class="container"><a href="#" class="navbar-brand">Coronation Industrial</a>
+        <div class="container"><a href="#" class="navbar-brand">Coronation Industrial <i class="fas fa-cog text-white"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -49,7 +50,7 @@
                 <div>
                     <h1>Coronation Industrial <span class="text-warning">Control & Services</span></h1>
                     <p class="lead my-4">We focus on our Client needs and provide our Best Services</p>
-                    <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Book Appointment</button>
+                    <button class="btn btn-outline-warning btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Book Appointment</button>
                 </div>
                 <img class="img-fluid w-50 d-none d-sm-block" src="img/hero-img.svg" alt="">
             </div>
@@ -63,7 +64,7 @@
                 <h3 class="mb-3 mb-md-0 text-dark">Request A Free Quote</h3>
                 <div class="input-group news-input">
                     <input type="text" class="form-control" placeholder="Enter Email">
-                    <button class="btn btn-dark btn-lg" type="button" onclick="alert('Thank you for join Us.');">Submit</button>
+                    <button class="btn btn-outline-dark btn-lg" type="button" onclick="alert('Thank you for join Us.');">Submit</button>
                 </div>
             </div>
         </div>
@@ -76,7 +77,7 @@
                     <img src="img/about.svg" alt="" class="img-fluid">
                 </div>
                 <div class="col-md p-5">
-                    <h6 class="text-warning">About</h6>
+                    <h6 class="text-warning"> <b>About</b> </h6>
                     <h1>Coronation Industrial</h1>
                     <p class="lead">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit recusandae molestias maiores eum provident.
@@ -163,6 +164,32 @@
                 </div>
                 <div class="col-md">
                     <img src="img/services.svg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- counter  Section-->
+    <section id="count" class="p-2 bg-warning text-light">
+        <div class="container">
+            <div class="row align-item-center justify-content-between">
+
+                <div class="col-md text-center">
+                    <i class="fas fa-check-circle count-icon"></i>
+                    <h2 class="counter text-dark">15504</h2>
+                    <p>Completed Assignment</p>
+
+                </div>
+                <div class="col-md  text-center">
+                    <i class="fas fa-smile count-icon "></i>
+                    <h2 class="counter text-dark"> 5224</h2>
+                    <p>happy customer</p>
+                </div>
+                <div class="col-md text-center">
+                    <i class="fas fa-user-friends count-icon"></i>
+                    <h2 class="counter text-dark"> 5426</h2>
+                    <p>Total Customer</p>
                 </div>
             </div>
         </div>
@@ -350,8 +377,16 @@
             </div>
         </div>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    </script>
 
 </body>
 
